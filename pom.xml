@@ -118,6 +118,7 @@
 
     <modules>
         <module>dashboard-ear</module>
+        <module>dashboard-data</module>
         <module>dashboard-ejb</module>
         <module>dashboard-web</module>
         <module>dashboard-ui</module>
