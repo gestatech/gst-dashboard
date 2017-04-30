@@ -17,5 +17,16 @@
     <name>dashboard-data-api</name>
     <description>${gst.application.prefix} data api module.</description>
 
+    <dependencies>
+        <dependency>
+            <groupId>javax</groupId>
+            <artifactId>javaee-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>be.gestatech</groupId>
+            <artifactId>dashboard-core-api</artifactId>
+        </dependency>
+    </dependencies>
+
     
 </project>
