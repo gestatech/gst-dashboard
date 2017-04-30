@@ -25,6 +25,7 @@
         <dependency>
             <groupId>be.gestatech</groupId>
             <artifactId>dashboard-core-api</artifactId>
+            <version>${project.version}</version>
         </dependency>
     </dependencies>
 
