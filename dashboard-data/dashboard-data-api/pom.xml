@@ -6,21 +6,16 @@
 
     <parent>
         <groupId>be.gestatech</groupId>
-        <artifactId>gst-dashboard</artifactId>
+        <artifactId>dashboard-data</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 
     <groupId>be.gestatech</groupId>
-    <artifactId>dashboard-data</artifactId>
+    <artifactId>dashboard-data-api</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <packaging>pom</packaging>
 
-    <name>dashboard-data</name>
-    <description>${gst.application.prefix} data module.</description>
+    <name>dashboard-data-api</name>
+    <description>${gst.application.prefix} data api module.</description>
 
-    <modules>
-        <module>dashboard-data-api</module>
-        <module>dashboard-data-impl</module>
-    </modules>
     
 </project>
