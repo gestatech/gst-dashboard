@@ -167,6 +167,7 @@
 
     <modules>
         <module>dashboard-ear</module>
+        <module>dashboard-core</module>
         <module>dashboard-data</module>
         <module>dashboard-ejb</module>
         <module>dashboard-web</module>
