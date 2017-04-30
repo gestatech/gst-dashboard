@@ -10,7 +10,7 @@
 
     <!-- More Project Information -->
     <name>dashboard</name>
-    <description>gst-dashboard: One single place to access everything.</description>
+    <description>${gst.application.prefix} One single place to access everything.</description>
     <url>https://github.com/gestatech/gst-dashboard</url>
     <inceptionYear>2017</inceptionYear>
 
@@ -22,13 +22,18 @@
         </license>
     </licenses>
 
+    <organization>
+        <name>Gestatech</name>
+        <url>http://www.gestatech.be</url>
+    </organization>
+
     <developers>
         <developer>
             <id>gestatech</id>
             <email>fariala.amuri@gestatech.be</email>
             <name>Fariala Amuri</name>
             <url>https://github.com/gestatech</url>
-            <organization>gestatech</organization>
+            <organization>Gestatech</organization>
             <organizationUrl>http://www.gestatech.be</organizationUrl>
             <roles>
                 <role>architect</role>
@@ -68,9 +73,17 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
+        <!-- Internal properties -->
+        <gst.application.prefix>gst-dashboard:</gst.application.prefix>
+
+        <!-- Maven plugins properties -->
+        <maven-compiler-plugin.version>3.6.1</maven-compiler-plugin.version>
+        <maven-resources-plugin.version>3.0.2</maven-resources-plugin.version>
+
         <!-- Third parties properties -->
         <mysql.version>6.0.5</mysql.version>
         <hsqldb.version>2.3.4</hsqldb.version>
+        <derby.version>10.8.1.2</derby.version>
         <cobertura.version>2.7</cobertura.version>
         <github-maven.version>0.6</github-maven.version>
         <github.global.server>github</github.global.server>
@@ -85,6 +98,42 @@
                 <artifactId>javaee-api</artifactId>
                 <version>${javaee-api.version}</version>
                 <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>4.12</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.mockito</groupId>
+                <artifactId>mockito-all</artifactId>
+                <version>1.10.19</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.derby</groupId>
+                <artifactId>derby</artifactId>
+                <version>${derby.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.derby</groupId>
+                <artifactId>derbytools</artifactId>
+                <version>${derby.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.derby</groupId>
+                <artifactId>derbynet</artifactId>
+                <version>${derby.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.derby</groupId>
+                <artifactId>derbyclient</artifactId>
+                <version>${derby.version}</version>
+                <scope>test</scope>
             </dependency>
             <dependency>
                 <groupId>org.hsqldb</groupId>
@@ -165,11 +214,19 @@
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
                     <version>3.6.1</version>
+                    <configuration>
+                        <source>${jdk.source}</source>
+                        <target>${jdk.target}</target>
+                    </configuration>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-ear-plugin</artifactId>
                     <version>2.10.1</version>
+                    <configuration>
+                        <version>7</version>
+                        <defaultLibBundleDir>lib</defaultLibBundleDir>
+                    </configuration>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -183,6 +240,24 @@
                 </plugin>
             </plugins>
         </pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven-compiler-plugin.version}</version>
+                <configuration>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>${maven-resources-plugin.version}</version>
+                <configuration>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                </configuration>
+            </plugin>
+        </plugins>
     </build>
 
     <reporting>

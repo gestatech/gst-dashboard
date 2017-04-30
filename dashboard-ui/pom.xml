@@ -15,5 +15,6 @@
     <version>1.0.0-SNAPSHOT</version>
 
     <name>dashboard-ui</name>
+    <description>${gst.application.prefix} ui module.</description>
 
 </project>

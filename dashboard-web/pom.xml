@@ -16,6 +16,7 @@
     <packaging>war</packaging>
 
     <name>dashboard-web</name>
+    <description>${gst.application.prefix} web module.</description>
 
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
@@ -27,10 +28,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.6.1</version>
                 <configuration>
-                    <source>${jdk.source}</source>
-                    <target>${jdk.target}</target>
                     <compilerArguments>
                         <endorseddirs>${endorsed.dir}</endorseddirs>
                     </compilerArguments>
