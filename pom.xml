@@ -64,7 +64,7 @@
     <properties>
         <!-- Generic properties -->
         <jdk.source>1.8</jdk.source>
-        <jdk.target>1.7</jdk.target>
+        <jdk.target>1.8</jdk.target>
         <ejbVersion.version>3.2</ejbVersion.version>
         <javaee-api.version>7.0</javaee-api.version>
         <javaee-endorsed-api>7.0</javaee-endorsed-api>
