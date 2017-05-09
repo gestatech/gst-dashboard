@@ -11,22 +11,18 @@
     </parent>
 
     <groupId>be.gestatech</groupId>
-    <artifactId>dashboard-data-api</artifactId>
+    <artifactId>dashboard-data-core</artifactId>
     <version>1.0.0-SNAPSHOT</version>
 
-    <name>dashboard-data-api</name>
-    <description>${gst.application.prefix} data api module.</description>
+    <name>dashboard-data-core</name>
+    <description>${gst.application.prefix} data core module.</description>
 
     <dependencies>
         <dependency>
             <groupId>javax</groupId>
             <artifactId>javaee-api</artifactId>
         </dependency>
-        <dependency>
-            <groupId>be.gestatech</groupId>
-            <artifactId>dashboard-data-core</artifactId>
-            <version>${project.version}</version>
-        </dependency>
     </dependencies>
+
 
 </project>
