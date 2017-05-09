@@ -1,7 +1,5 @@
 package be.gestatech.dashbooard.core.logger;
 
-import javax.enterprise.inject.Produces;
-import javax.enterprise.inject.spi.InjectionPoint;
 import javax.inject.Inject;
 import javax.inject.Named;
 import java.util.logging.Level;

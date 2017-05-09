@@ -52,7 +52,7 @@ public abstract class SimpleQueryInOutMapperBase<Entity, Dto> implements QueryIn
         boolean mappedParameter = false;
         if (Objects.nonNull(parameter)) {
             final String name = parameter.getClass().getName();
-            mappedParameter =  Object.class.isInstance(parameter) && !(name.startsWith("java.") || name.startsWith("javax."));
+            mappedParameter = Object.class.isInstance(parameter) && !(name.startsWith("java.") || name.startsWith("javax."));
         }
         return mappedParameter;
     }

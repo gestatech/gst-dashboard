@@ -4,11 +4,10 @@
  */
 package be.gestatech;
 
-import javax.ejb.Stateless;
 import javax.ejb.LocalBean;
+import javax.ejb.Stateless;
 
 /**
- *
  * @author martin
  */
 @Stateless
