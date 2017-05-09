@@ -1,4 +1,4 @@
-package be.gestatech.dashbooard.core.partialbean;
+package be.gestatech.dashboard.data.api.partialbean;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;

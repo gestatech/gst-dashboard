@@ -1,6 +1,6 @@
 package be.gestatech.dashboard.data.api;
 
-import be.gestatech.dashbooard.core.partialbean.PartialBeanBinding;
+import be.gestatech.dashboard.data.api.partialbean.PartialBeanBinding;
 
 import javax.enterprise.inject.Stereotype;
 import java.lang.annotation.*;
