@@ -1,0 +1,1 @@
+cd .. && push heroku master && cd admin-dev-cli

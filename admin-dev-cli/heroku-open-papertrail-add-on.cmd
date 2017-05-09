@@ -1,0 +1,1 @@
+cd .. && heroku addons:open papertrail && cd admin-dev-cli

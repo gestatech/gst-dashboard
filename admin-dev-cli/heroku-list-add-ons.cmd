@@ -1,0 +1,1 @@
+cd .. && heroku addons && cd admin-dev-cli

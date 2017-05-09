@@ -1,0 +1,1 @@
+cd .. && heroku logs --tail
