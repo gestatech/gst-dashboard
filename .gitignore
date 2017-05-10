@@ -64,3 +64,11 @@ nb-configuration.xml
 */*.iml
 */target/
 *.iml
+
+dashboard-*.iml
+*/*/dashboard-*.iml
+*/dashboard-*.iml
+
+dashboard-data.iml
+*/*/dashboard-data.iml
+*/dashboard-data.iml
